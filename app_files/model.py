@@ -11,7 +11,8 @@ y=dataset.iloc[:,3].values
 
 ###### START CODE HERE##############################
 #define ANY regression Model here
-reg=### Define Model
+from sklearn.tree import DecisionTreeClassifier
+reg=DecisionTreeClassifier()
 reg.fit(X,y)
 print(reg.score)
 #######################################END here
